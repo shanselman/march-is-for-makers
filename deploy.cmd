@@ -1,4 +1,4 @@
-@if "%SCM_TRACE_LEVEL%" NEQ "4" @echo off
+REM @if "%SCM_TRACE_LEVEL%" NEQ "4" @echo off
 
 :: ----------------------
 :: KUDU Deployment Script
@@ -48,8 +48,11 @@ IF NOT DEFINED KUDU_SYNC_CMD (
   SET KUDU_SYNC_CMD=%appdata%\npm\kuduSync.cmd
 )
 
+ECHO CALLING GET RUBY
 
 call getruby.cmd
+
+ECHO WE MADE IT
 
 
 
@@ -62,7 +65,8 @@ echo Handling Basic Web Site deployment.
 
 :: 1. KuduSync
 IF /I "%IN_PLACE_DEPLOYMENT%" NEQ "1" (
-  call :ExecuteCmd "%KUDU_SYNC_CMD%" -v 50 -f "%DEPLOYMENT_SOURCE%" -t "%DEPLOYMENT_TARGET%" -n "%NEXT_MANIFEST_PATH%" -p "%PREVIOUS_MANIFEST_PATH%" -i ".git;.hg;.deployment;deploy.cmd"
+  REM the only thing we changed was \build because that's where middleman puts its stuff
+  call :ExecuteCmd "%KUDU_SYNC_CMD%" -v 50 -f "%DEPLOYMENT_SOURCE%\build" -t "%DEPLOYMENT_TARGET%" -n "%NEXT_MANIFEST_PATH%" -p "%PREVIOUS_MANIFEST_PATH%" -i ".git;.hg;.deployment;deploy.cmd"
   IF !ERRORLEVEL! NEQ 0 goto error
 )
 
