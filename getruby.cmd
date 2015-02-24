@@ -52,6 +52,7 @@ ECHO Install eventmachine 1.0.7
 call gem install eventmachine -v '1.0.7' --no-ri --no-rdoc > updateventmachineout
 popd
 
+:end
 
 REM Need to be in Reposistory
 cd %DEPLOYMENT_SOURCE%
