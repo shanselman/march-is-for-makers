@@ -67,6 +67,7 @@ REM call gem install middleman --no-ri --no-rdoc
 cd %DEPLOYMENT_SOURCE%
 cd
 
+ECHO Running Middleman
 call middleman build
 
 REM KuduSync is after this!
