@@ -50,18 +50,22 @@ call gem uninstall rubygems-update -x
 REM Why is this needed on Windows? 
 ECHO Install eventmachine 1.0.7
 call gem install eventmachine -v '1.0.7' --no-ri --no-rdoc > updateventmachineout
-
-cd
-REM Need to be in Reposistory
 popd
+
+
+REM Need to be in Reposistory
+cd %DEPLOYMENT_SOURCE%
+cd
+
 ECHO Update Bundler
 call bundle update
 
-REM get middleman
-ECHO Install middleman...the whole point!
+REM ECHO Install middleman...the whole point!
 REM call gem install middleman --no-ri --no-rdoc
 
-:end
+cd "%DEPLOYMENT_SOURCE%
+cd
 
 call middleman build
+
 REM KuduSync is after this!
