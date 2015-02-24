@@ -51,8 +51,11 @@ REM Why is this needed on Windows?
 ECHO Install eventmachine 1.0.7
 call gem install eventmachine -v '1.0.7' --no-ri --no-rdoc > updateventmachineout
 
+ECHO Before :end
+cd
 :end
-
+ECHO After :end
+cd
 REM Need to be in Reposistory
 popd
 ECHO Update Bundler
