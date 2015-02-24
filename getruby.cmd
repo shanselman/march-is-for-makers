@@ -19,7 +19,7 @@ REM 64bit
 curl -o ruby215.zip http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.1.5-x64-mingw32.7z?direct
 REM Azure puts 7zip here!
 EcHO START Unzipping Ruby
-d:\7zip\7za x -y ruby215.zip > out
+d:\7zip\7za x -xr!*.ri -y ruby215.zip > out
 EcHO DONE Unzipping Ruby
 
 REM Get DevKit to build Ruby native gems  
