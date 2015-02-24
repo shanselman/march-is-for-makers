@@ -64,7 +64,7 @@ call bundle update
 REM ECHO Install middleman...the whole point!
 REM call gem install middleman --no-ri --no-rdoc
 
-cd "%DEPLOYMENT_SOURCE%
+cd %DEPLOYMENT_SOURCE%
 cd
 
 call middleman build
