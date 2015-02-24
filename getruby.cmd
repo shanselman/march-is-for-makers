@@ -51,10 +51,6 @@ REM Why is this needed on Windows?
 ECHO Install eventmachine 1.0.7
 call gem install eventmachine -v '1.0.7' --no-ri --no-rdoc > updateventmachineout
 
-ECHO Before :end
-cd
-:end
-ECHO After :end
 cd
 REM Need to be in Reposistory
 popd
@@ -64,6 +60,8 @@ call bundle update
 REM get middleman
 ECHO Install middleman...the whole point!
 REM call gem install middleman --no-ri --no-rdoc
+
+:end
 
 call middleman build
 REM KuduSync is after this!
