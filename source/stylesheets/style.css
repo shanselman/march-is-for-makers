@@ -3,6 +3,10 @@ a {
   color: black;
 }
 
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .episode-details h3 {
   margin-top: 0px;
 }
