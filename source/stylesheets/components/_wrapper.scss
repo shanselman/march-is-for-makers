@@ -2,3 +2,17 @@
   @include outer-container;
   @include padding(null $base-spacing);
 }
+
+.left-wrapper, .right-wrapper {
+  @include padding(null $base-spacing);
+  max-width: ($max-width/2);
+}
+
+.left-wrapper {
+  float: right;
+  margin-right: 3em;
+}
+
+.right-wrapper {
+  margin-left: 3em;
+}

@@ -1,8 +1,22 @@
 .alt-section,
-.primary-section {
+.primary-section,
+.left-section,
+.right-section {
   @include padding(($base-spacing * 4) null);
 }
 
 .alt-section {
   background-color: #fff;
+}
+
+.left-section, .right-section {
+  width: 50%;
+}
+
+.left-section {
+  background-color: tint($base-background-color, 75%);
+}
+
+.two-sections {
+  @include display(flex);
 }
