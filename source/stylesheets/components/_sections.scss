@@ -1,0 +1,8 @@
+.alt-section,
+.primary-section {
+  @include padding(($base-spacing * 4) null);
+}
+
+.alt-section {
+  background-color: #fff;
+}

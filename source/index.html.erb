@@ -1,75 +1,129 @@
 ---
 title: March is for Makers
 ---
-    <div class="jumbotron">
-      <div class="text-center">
-        <h1>March is for Makers</h1>
-        <p>A month-long celebration of hardware and the power of making.</p>
-        <p>
-          a <%= link_to "CodeNewbie", "http://www.codenewbie.org" %> &amp
-          <%= link_to "Hanselminutes", "http://hanselminutes.com" %> production
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    <small class="presented-by">
+      a <%= link_to "CodeNewbie", "http://www.codenewbie.org" %> &amp
+      <%= link_to "Hanselminutes", "http://hanselminutes.com" %> production
+    </small>
+    <h1 class="site-title">March is for Makers</h1>
+    <h2 class="site-tagline">A month-long celebration of hardware and the power of making.</h2>
+  </div>
+</header>
+
+<main class="page-main" role="main">
+  <section id="introduction" class="alt-section">
+    <div class="wrapper">
+      <div class="callout">
+        <h3 class="intro-highlight">Curious about hardware and the maker movement?</h3>
+        <p class="site-introduction">
+          Hanselminutes and CodeNewbie are teaming up to produce two episodes a
+          week for the month of March, featuring incredible makers in the hardware space.
+          Subscribe and stay tuned.
         </p>
-        <a class="button" href="#about"><button>learn more</button></a>
       </div>
     </div>
-    <div class="container" role="main">
+  </section>
 
-      <!-- Main jumbotron for a primary marketing message or call to action -->
+  <section id="episodes" class="primary-section">
+    <div class="wrapper">
 
-      <div class="episodes row">
-        <div class="col-lg-6">
-          <img class="col-lg-4" src="http://frelow.smugmug.com/CodeNewbie/i-2hwDLN5/0/S/rebecca-S.jpg">
-          <div class="col-lg-8 episode-details">
-            <h3>3D Printing with Robotis</h3>
-            <audio controls><source src="http://static1.squarespace.com/static/5161ac76e4b0d5cb924e7ed5/t/54eacd17e4b056f5cc430c48/1424674182475/Sarah_Frisk_Interview_mixdown.mp3/original/Sarah_Frisk_Interview_mixdown.mp3" type="audio/ogg"></audio>
-            <p>Developer Sarah Frisk uses her incredible drawing skills to teach coding tools and concepts like git through her comic, Monster Markup Manual. We talk about her love of drawing, how art and code come together, and how monsters can do a great job of learning to code.</p>
+      <div class="episode">
+        <div class="episode-header">
+          <div class="media-object">
+            <figure class="episode-image media-figure">
+              <img src="http://frelow.smugmug.com/CodeNewbie/i-2hwDLN5/0/S/rebecca-S.jpg">
+            </figure>
+            <div class="episode-metadata media-metadata">
+              <h3 class="episode-title">3D Printing with Robotis</h3>
+              <h3 class="episode-guest">Matt Richardson</h3>
+              <time class="episode-date" datetime="2014-10-13">October 13, 2014</time>
+            </div>
           </div>
+          <audio class="episode-player" controls><source src="http://static1.squarespace.com/static/5161ac76e4b0d5cb924e7ed5/t/54eacd17e4b056f5cc430c48/1424674182475/Sarah_Frisk_Interview_mixdown.mp3/original/Sarah_Frisk_Interview_mixdown.mp3" type="audio/ogg"></audio>
         </div>
-        <div class="col-lg-6">
-          <img class="col-lg-4" src="http://frelow.smugmug.com/CodeNewbie/i-2hwDLN5/0/S/rebecca-S.jpg">
-          <div class="col-lg-8 episode-details">
-            <h3>3D Printing with Robotis</h3>
-            <audio controls><source src="http://static1.squarespace.com/static/5161ac76e4b0d5cb924e7ed5/t/54eacd17e4b056f5cc430c48/1424674182475/Sarah_Frisk_Interview_mixdown.mp3/original/Sarah_Frisk_Interview_mixdown.mp3" type="audio/ogg"></audio>
+        <div class="episode-description">
+          <div>
             <p>Developer Sarah Frisk uses her incredible drawing skills to teach coding tools and concepts like git through her comic, Monster Markup Manual. We talk about her love of drawing, how art and code come together, and how monsters can do a great job of learning to code.</p>
           </div>
         </div>
       </div>
-      <footer class="row">
-        <article class="text-center col-lg-offset-2 col-lg-8">
-          <a name="about"><h2>About</h2></a>
-          <p>The Maker Movement is in full swing.
-            This rekindled excitement about hardware and manufacturing has us
-            thrilled and sharing the joy of making with our family and friends.
-            It’s the beginning of Arts and Crafts 2.0 for makers, new and old.
-            So we  are declaring this month Maker’s Month.</p>
+      <div class="episode">
+        <div class="episode-header">
+          <div class="media-object">
+            <figure class="episode-image media-figure">
+              <img src="http://frelow.smugmug.com/CodeNewbie/i-2hwDLN5/0/S/rebecca-S.jpg">
+            </figure>
+            <div class="episode-metadata media-metadata">
+              <h3 class="episode-title">3D Printing with Robotis</h3>
+              <h3 class="episode-guest">Matt Richardson</h3>
+              <time class="episode-date" datetime="2014-10-13">October 13, 2014</time>
+            </div>
+          </div>
+          <audio class="episode-player" controls><source src="http://static1.squarespace.com/static/5161ac76e4b0d5cb924e7ed5/t/54eacd17e4b056f5cc430c48/1424674182475/Sarah_Frisk_Interview_mixdown.mp3/original/Sarah_Frisk_Interview_mixdown.mp3" type="audio/ogg"></audio>
+        </div>
+        <div class="episode-description">
+          <div>
+            <p>Developer Sarah Frisk uses her incredible drawing skills to teach coding tools and concepts like git through her comic, Monster Markup Manual. We talk about her love of drawing, how art and code come together, and how monsters can do a great job of learning to code.</p>
+          </div>
+        </div>
+      </div>
 
-          <p>We’re Saron Yitbarek and Scott Hanselman, hosts of the CodeNewbie Podcast and Hanselminutes respectively.
-            This month, we’ll produce  two episodes a week on each of our podcasts.
-            Join us on Mondays and Thursday all March long for new shows  with incredible
-            people creating  amazing stuff with DIY manufacturing, and innovative hardware.</p>
+    </div>
+  </section>
 
-          <p>Each show includes links to projects you can explore, books you can download,
-            products you can buy, teaching materials for the classroom, as well as lots of websites and other podcasts.
-            We have no affiliation with any of the guests or their companies, other
-            than we love their work and think you will too.</p>
+  <section id="about" class="alt-section">
+    <div class="wrapper">
+      <div class="callout">
+        <h3 class="intro-highlight">About</h3>
+        <p>The Maker Movement is in full swing.
+          This rekindled excitement about hardware and manufacturing has us
+          thrilled and sharing the joy of making with our family and friends.
+          It’s the beginning of Arts and Crafts 2.0 for makers, new and old.
+          So we  are declaring this month Maker’s Month.</p>
 
-          <p>Join us twice a week all month long, and be sure to tweet and spread the word that #MarchIsForMakers!</p>
-        </article>
-        <article class="col-lg-offset-1 col-lg-5">
-          <h4>CodeNewbie Podcast</h4>
-          <p>We are the most supportive community of programmers and people learning to code.
-            Tune in every week for stories about people on their coding journey</p>
-          <a class="btn btn-default" href="http://feeds.podtrac.com/q8s8ba9YtM6r" role="button">Subscribe</a>
-          <a class="btn btn-default" href="https://itunes.apple.com/us/podcast/codenewbie/id919219256" role="button">iTunes</a>
-        </article>
-        <article class="col-lg-5">
-          <h4>Hanselminutes</h4>
-          <p>Hanselminutes is "Fresh Air for Developers." We're a weekly NPR-style interview show 
-            with diverse technical voices and deep technical conversations.
-          </p>
-          <a class="btn btn-default" href="http://www.hanselminutes.com/subscribe" role="button">Subscribe</a> 
-          <a class="btn btn-default" href="https://itunes.apple.com/us/podcast/hanselminutes/id117488860" role="button">iTunes</a>
-        </article>
-      </footer>
-    </div> <!-- /container -->
+        <p>We’re Saron Yitbarek and Scott Hanselman, hosts of the CodeNewbie Podcast and Hanselminutes respectively.
+          This month, we’ll produce  two episodes a week on each of our podcasts.
+          Join us on Mondays and Thursday all March long for new shows  with incredible
+          people creating  amazing stuff with DIY manufacturing, and innovative hardware.</p>
+
+        <p>Each show includes links to projects you can explore, books you can download,
+          products you can buy, teaching materials for the classroom, as well as lots of websites and other podcasts.
+          We have no affiliation with any of the guests or their companies, other
+          than we love their work and think you will too.</p>
+
+        <p>Join us twice a week all month long, and be sure to tweet and spread the word that #MarchIsForMakers!</p>
+          Hanselminutes and CodeNewbie are teaming up to produce two episodes a
+          week for the month of March, featuring incredible makers in the hardware space.
+          Subscribe and stay tuned.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrapper">
+      <article>
+        <h4>CodeNewbie Podcast</h4>
+        <p>We are the most supportive community of programmers and people learning to code.
+          Tune in every week for stories about people on their coding journey</p>
+        <a href="http://feeds.podtrac.com/q8s8ba9YtM6r" role="button">Subcribe</a>
+        <a class="btn btn-default" href="https://itunes.apple.com/us/podcast/codenewbie/id919219256" role="button">iTunes</a>
+      </article>
+      <article>
+        <h4>Hanselminutes</h4>
+        <p>Hanselminutes is "Fresh Air for Developers." We're a weekly NPR-style interview show
+            with diverse technical voices and deep technical conversations.</p>
+        <a href="http://www.hanselminutes.com/subscribe" role="button">Subcribe</a>
+        <a class="btn btn-default" href="https://itunes.apple.com/us/podcast/hanselminutes/id117488860" role="button">iTunes</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+
+</footer>
+
 

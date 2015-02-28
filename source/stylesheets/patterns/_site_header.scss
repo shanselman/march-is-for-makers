@@ -1,0 +1,20 @@
+.site-header {
+  @include padding(($base-spacing * 6) null ($base-spacing * 2));
+  background-color: lightblue;
+
+  .presented-by {
+    font-style: italic;
+    font-family: $georgia;
+    font-size: modular-scale(0);
+  }
+
+  .site-title {
+    font-size: modular-scale(5);
+    margin-bottom: 0.4em;
+  }
+
+  .site-tagline {
+    font-size: modular-scale(1);
+    max-width: 20em;
+  }
+}

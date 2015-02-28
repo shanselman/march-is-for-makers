@@ -1,0 +1,12 @@
+.media-object {
+  @include display(flex);
+}
+
+.media-figure {
+  margin: 0 8% 0 0;
+  width: 24%;
+}
+
+.media-metadata {
+  width: 68%;
+}

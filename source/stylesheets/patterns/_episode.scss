@@ -1,0 +1,59 @@
+.episode {
+  @include display(flex);
+  background-color: #fff;
+
+  &:not(:last-child) {
+    margin-bottom: $base-spacing * 2;
+  }
+}
+
+.episode-header,
+.episode-description {
+  padding: $base-spacing;
+
+  @include media($medium-screen-up) {
+    width: 50%;
+  }
+}
+
+.episode-header {
+  background-color: tint($base-background-color, 75%);
+
+  .media-object {
+    @include align-items(center);
+    margin-bottom: $base-spacing;
+  }
+}
+
+.episode-image {
+  width: 5em;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.episode-title {
+  font-size: modular-scale(1);
+  margin-bottom: 0.2em;
+}
+
+.episode-guest {
+  margin-bottom: 0;
+
+  &::before {
+    content: "with ";
+    font-family: $georgia;
+    font-style: italic;
+    font-weight: normal;
+  }
+}
+
+.episode-date {
+  color: tint($base-font-color, 15%);
+  font-size: modular-scale(-1);
+}
+
+.episode-player {
+  width: 100%;
+}

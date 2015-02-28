@@ -1,0 +1,4 @@
+.wrapper {
+  @include outer-container;
+  @include padding(null $base-spacing);
+}
