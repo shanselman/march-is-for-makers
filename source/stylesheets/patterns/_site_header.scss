@@ -1,6 +1,8 @@
 .site-header {
   @include padding(($base-spacing * 6) null ($base-spacing * 2));
   background-color: lightblue;
+  background-image: url("../../images/computing-for-kids.png");
+  background-size: 100%;
 
   .presented-by {
     font-style: italic;
