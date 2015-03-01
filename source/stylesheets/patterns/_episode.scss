@@ -1,7 +1,7 @@
 .episode {
   @include display(flex);
   background-color: #fff;
-
+  box-shadow: 1px 1px 2px #d3d3d3;
   &:not(:last-child) {
     margin-bottom: $base-spacing * 2;
   }

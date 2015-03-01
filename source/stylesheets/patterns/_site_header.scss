@@ -3,12 +3,7 @@
   background-color: lightblue;
   background-image: url("../../images/computing-for-kids.png");
   background-size: 100%;
-
-  .presented-by {
-    font-style: italic;
-    font-family: $georgia;
-    font-size: modular-scale(0);
-  }
+  border-bottom: 1px solid rgba(126, 126, 126, .2);
 
   .site-title {
     font-size: modular-scale(5);
@@ -18,5 +13,10 @@
   .site-tagline {
     font-size: modular-scale(1);
     max-width: 20em;
+  }
+}
+.site-header-content {
+  .callout {
+    float: left;
   }
 }
