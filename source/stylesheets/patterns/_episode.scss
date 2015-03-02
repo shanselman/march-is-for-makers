@@ -1,6 +1,6 @@
 .episode {
   background-color: #fff;
-  box-shadow: 1px 1px 2px #b0b0b0;
+  border: 2px solid #eee;
   &:not(:last-child) {
     margin-bottom: $base-spacing * 2;
   }
@@ -68,5 +68,10 @@
 .episode-title {
   font-size: modular-scale(1);
   margin-bottom: 0.2em;
+  color: $base-font-color;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
