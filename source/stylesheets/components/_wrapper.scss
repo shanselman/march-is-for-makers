@@ -14,5 +14,7 @@
 }
 
 .right-wrapper {
-  margin-left: 3em;
+  @include media($medium-screen-up){
+    margin-left: 3em;
+  }
 }

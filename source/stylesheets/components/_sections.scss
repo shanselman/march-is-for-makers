@@ -2,7 +2,11 @@
 .primary-section,
 .left-section,
 .right-section {
-  @include padding(($base-spacing * 4) null);
+  @include padding($base-spacing);
+
+  @include media($medium-screen-up) {
+    @include padding(($base-spacing * 4) null);
+  }
 }
 
 .alt-section {
@@ -10,7 +14,12 @@
 }
 
 .left-section, .right-section {
-  width: 50%;
+  @include outer-container;
+  width: 100%;
+  @include media($medium-screen-up) {
+    width: 50%;
+  }
+
 }
 
 .left-section {
@@ -18,5 +27,7 @@
 }
 
 .two-sections {
-  @include display(flex);
+  @include media($medium-screen-up) {
+    @include display(flex);
+  }
 }

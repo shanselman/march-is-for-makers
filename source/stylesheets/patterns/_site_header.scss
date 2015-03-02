@@ -1,14 +1,22 @@
 .site-header {
-  @include padding(($base-spacing * 6) null ($base-spacing * 2));
   background-color: lightblue;
-  background-image: url("../../images/artsy.JPG");
+  background-image: url("../../images/mobile-background-image.jpg");
   background-size: 100%;
   border-bottom: 1px solid rgba(126, 126, 126, .2);
 
+  @include media($medium-screen-up) {
+    @include padding(($base-spacing * 6) null ($base-spacing * 2));
+    background-image: url("../../images/artsy.JPG");
+  }
+
   .site-title {
-    font-size: modular-scale(5);
-    margin-bottom: 0.4em;
     color: #000;
+    font-size: modular-scale(3);
+    margin-bottom: 0.4em;
+
+    @include media($medium-screen-up) {
+      font-size: modular-scale(5);
+    }
   }
 
   .site-tagline {
