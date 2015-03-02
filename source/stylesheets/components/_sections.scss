@@ -5,12 +5,12 @@
   @include padding($base-spacing);
 
   @include media($medium-screen-up) {
-    @include padding(($base-spacing * 4) null);
+    @include padding(($base-spacing * 3) null);
   }
 }
 
 .alt-section {
-  background-color: #fdfdfd;
+  background-color: lightgray;
 }
 
 .left-section, .right-section {

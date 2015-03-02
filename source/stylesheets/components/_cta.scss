@@ -2,19 +2,21 @@
   @include padding($base-spacing/7 ($base-spacing));
   border: 1px solid tint($base-font-color, 70%);
   color: tint($base-font-color, 50%);
-  font-size: modular-scale(-1);
+  font-size: modular-scale(1);
   font-weight: bold;
 }
 
 .itunes-link {
   background: $bright-blue;
   color: #fff;
+  font-size: modular-scale(1);
   border: none;
 }
 
 .rss-feed {
   border: none;
-  background: $yellow;
+  background: $orange;
+  font-size: modular-scale(1);
   color: #fff;
 }
 
