@@ -2,7 +2,7 @@
   @include padding($base-spacing/7 ($base-spacing));
   border: 1px solid tint($base-font-color, 70%);
   color: tint($base-font-color, 50%);
-  font-size: modular-scale(1);
+  font-size: modular-scale(0);
   font-weight: bold;
 }
 
