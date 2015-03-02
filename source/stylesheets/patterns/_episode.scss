@@ -1,16 +1,19 @@
 .episode {
-  @include display(flex);
   background-color: #fff;
   box-shadow: 1px 1px 2px #b0b0b0;
   &:not(:last-child) {
     margin-bottom: $base-spacing * 2;
+  }
+
+  @include media($medium-screen-up) {
+    @include display(flex);
   }
 }
 
 .episode-header,
 .episode-description {
   padding: $base-spacing;
-  position: relative;
+  width: 100%;
 
   @include media($medium-screen-up) {
     width: 50%;
