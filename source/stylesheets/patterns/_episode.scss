@@ -10,9 +10,36 @@
 .episode-header,
 .episode-description {
   padding: $base-spacing;
+  position: relative;
 
   @include media($medium-screen-up) {
     width: 50%;
+  }
+}
+
+.episode-description-body {
+  margin-bottom: $base-spacing;
+}
+
+.episode-date {
+  color: tint($base-font-color, 15%);
+  font-size: modular-scale(-1);
+}
+
+.episode-description-links {
+  position: absolute;
+  right: 1.5em;
+  bottom: $base-spacing;
+}
+
+.episode-guest {
+  margin-bottom: 0;
+
+  &::before {
+    content: "with ";
+    font-family: $georgia;
+    font-style: italic;
+    font-weight: normal;
   }
 }
 
@@ -33,27 +60,12 @@
   }
 }
 
+.episode-player {
+  width: 100%;
+}
+
 .episode-title {
   font-size: modular-scale(1);
   margin-bottom: 0.2em;
 }
 
-.episode-guest {
-  margin-bottom: 0;
-
-  &::before {
-    content: "with ";
-    font-family: $georgia;
-    font-style: italic;
-    font-weight: normal;
-  }
-}
-
-.episode-date {
-  color: tint($base-font-color, 15%);
-  font-size: modular-scale(-1);
-}
-
-.episode-player {
-  width: 100%;
-}
