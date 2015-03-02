@@ -47,9 +47,6 @@ ECHO What's our new Rubygems version?
 call gem --version
 call gem uninstall rubygems-update -x
 
-REM Why is this needed on Windows? 
-ECHO Install eventmachine 1.0.7
-call gem install eventmachine -v '1.0.7' --no-ri --no-rdoc > updateventmachineout
 popd
 
 :end
@@ -58,8 +55,10 @@ REM Need to be in Reposistory
 cd %DEPLOYMENT_SOURCE%
 cd
 
-ECHO Update Bundler
-call bundle update
+call gem install bundler
+
+ECHO Bundler install (not update!)
+call bundle install
 
 REM ECHO Install middleman...the whole point!
 REM call gem install middleman --no-ri --no-rdoc
@@ -68,6 +67,6 @@ cd %DEPLOYMENT_SOURCE%
 cd
 
 ECHO Running Middleman
-call middleman build
+call bundle exec middleman build
 
 REM KuduSync is after this!
