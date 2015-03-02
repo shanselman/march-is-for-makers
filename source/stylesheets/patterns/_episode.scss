@@ -27,9 +27,7 @@
 }
 
 .episode-description-links {
-  position: absolute;
-  right: 1.5em;
-  bottom: $base-spacing;
+  @include margin($base-spacing 0);
 }
 
 .episode-guest {

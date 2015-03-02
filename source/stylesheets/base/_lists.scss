@@ -15,6 +15,10 @@ ol {
     margin-bottom: $small-spacing;
     padding-left: $base-spacing;
   }
+
+  li::before {
+    content: "○ "
+  }
 }
 
 dl {
