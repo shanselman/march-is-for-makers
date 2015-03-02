@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem "middleman", "~>3.3.9"
 gem "bourbon", "~>4.2.1"
 gem "neat", "~>1.7.1"
+gem "refills"
 
 # Live-reloading plugin
 #gem "middleman-livereload", "~> 3.1.0"

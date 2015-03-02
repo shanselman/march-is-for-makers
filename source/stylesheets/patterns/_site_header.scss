@@ -1,21 +1,25 @@
 .site-header {
   @include padding(($base-spacing * 6) null ($base-spacing * 2));
   background-color: lightblue;
-  background-image: url("../../images/Saron_no_blur.jpg");
+  background-image: url("../../images/Saron_Photoshopcroppedagain.jpg");
   background-size: 100%;
   border-bottom: 1px solid rgba(126, 126, 126, .2);
 
   .site-title {
     font-size: modular-scale(5);
     margin-bottom: 0.4em;
+    color: #000;
   }
 
   .site-tagline {
     font-size: modular-scale(1);
     max-width: 20em;
+    font-style: italic;
   }
 }
 .site-header-content {
+  background-color: rgba(255, 255, 255, .7);
+  padding: $base-spacing * 2;
   .callout {
     float: left;
   }
