@@ -1,12 +1,13 @@
 .site-header {
   background-color: lightblue;
   background-image: url("../../images/mobile-background-image.jpg");
-  background-size: 100%;
+  background-size: cover;
   border-bottom: 1px solid rgba(126, 126, 126, .2);
 
   @include media($medium-screen-up) {
     @include padding(($base-spacing * 1) null ($base-spacing * 2));
     background-image: url("../../images/artsy.JPG");
+    background-size: cover;
   }
 
   .site-title {
