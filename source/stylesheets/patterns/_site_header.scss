@@ -6,7 +6,7 @@
 
   @include media($medium-screen-up) {
     @include padding(($base-spacing * 1) null ($base-spacing * 2));
-    background-image: url("../../images/artsy.JPG");
+    background-image: url("../../images/artsy_mini.JPG");
     background-size: cover;
   }
 
