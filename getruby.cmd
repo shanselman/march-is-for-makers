@@ -16,10 +16,10 @@ REM Get Ruby and Rails
 REM 32bit
 REM curl -o rubyrails193.zip http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.1.5-i386-mingw32.7z?direct
 REM 64bit
-curl -o ruby215.zip http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.1.5-x64-mingw32.7z?direct
+curl -o ruby215.zip -L http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.1.5-x64-mingw32.7z?direct
 REM Azure puts 7zip here!
 EcHO START Unzipping Ruby
-d:\7zip\7za x -xr!*.ri -y ruby215.zip > rubyout
+SetLocal DisableDelayedExpansion & d:\7zip\7za x -xr!*.ri -y ruby215.zip > rubyout
 EcHO DONE Unzipping Ruby
 
 REM Get DevKit to build Ruby native gems  
